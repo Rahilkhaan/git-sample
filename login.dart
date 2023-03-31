@@ -1,10 +1,11 @@
 void main(List<String> args) {
- login ("rahil","khan12345 11"); 
+  login Login = login("rahil", "khan");
+  print(Login.name);
+  print(Login.pasword);
 }
 
 class login {
-String name;
-String pasword;
-login (this.name, this.pasword);
-
+  String name;
+  String pasword;
+  login(this.name, this.pasword);
 }
